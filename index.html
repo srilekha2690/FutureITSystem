@@ -30,7 +30,31 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
+<style type="text/css">
+		@media screen and (min-width: 601px) {
+			h2.headd{
+				margin-left: -120px; margin-right: 0px;
+			}
+			h3.headd{
+				margin-left: -120px; margin-right: 0px;
+			}
+			div.headd{
+				margin-left: -120px; margin-right: 0px;
+			}
+		 }
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+		@media screen and (max-width: 600px) {
+			h2.headd{
+				margin-left:100px;
+			}
+			h3.headd{
+				margin-left:100px;
+			}
+		div.headd{
+				margin-left: 100px; margin-right: -50px;
+			}
+		}
+	</style>
   <!-- =======================================================
     Theme Name: NewBiz
     Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
@@ -79,10 +103,10 @@
         <img src="img/intro-img.svg" alt="" class="img-fluid">
       </div>
 
-      <div class="intro-info" style="width: 40%;">
-        <h2>Welcome to<br><span>FutureIT </span><br>Systems</h2>
-        <h3 style="color: white">Digital Service Agency </h3>
-        <div style="padding-top: 20px;">
+      <div class="intro-info" style="width: 40%; margin-left: -40px;">
+        <h2 class="headd">Welcome to<br><span>Future IT Systems LLC</span></h2>
+        <h3 style="color: white;" class="headd">Digital Service Agency </h3>
+        <div  style="padding-top: 20px; " class="headd">
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
           <a href="#services" class="btn-services scrollto">Our Services</a>
         </div>
